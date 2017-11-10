@@ -1,0 +1,17 @@
+<h1>Password Regen</h1>
+<form>
+  <div>
+    <label for="website">Website</label>
+    <input type="text" #web>
+  </div>
+  <div>
+    <label for="salt">Salt</label>
+    <input type="text" #salt>
+  </div>
+  <div>
+    <label for="password">Password</label>
+    <input type="password" #pwd>
+  </div>
+  <button type='button' (click)="hasher(web.value, salt.value, pwd.value)">Click Me</button> 
+</form>
+<p>{{hash}}</p>

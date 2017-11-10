@@ -3,11 +3,13 @@ import { NgModule } from '@angular/core';
 
 
 import { AppComponent } from './app.component';
+import { HasherComponent } from './components/hasher/hasher.component';
 
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    HasherComponent
   ],
   imports: [
     BrowserModule
