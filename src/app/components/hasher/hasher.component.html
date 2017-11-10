@@ -12,6 +12,6 @@
     <label for="password">Password</label>
     <input type="password" #pwd>
   </div>
-  <button type='button' (click)="hasher(web.value, salt.value, pwd.value)">Click Me</button> 
+  <button type='button' (click)="hasher(web.value, salt.value, pwd.value)">Generate</button> 
 </form>
-<p>{{hash}}</p>
+<b><p>{{hash}}</p></b>

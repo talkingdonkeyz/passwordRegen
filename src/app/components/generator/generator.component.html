@@ -1,0 +1,20 @@
+<h1>Salt Generator</h1>
+<p>This form will collect some information which will be used to generate you random salt what you enter doesn't really matter.</p>
+<form>
+    <div>
+      <label for="food">Last Meal</label>
+      <input type="text" #food>
+    </div>
+    <div>
+      <label for="object">Random Object</label>
+      <input type="text" #object>
+    </div>
+    <div>
+      <label for="random">Button Mash</label>
+      <input type="text" #random>
+    </div>
+    <button type='button' (click)="counter()">Click Me</button>
+    <p>{{count}}</p>
+    <button type='button' (click)="generator()">Generate</button>
+  </form>
+<b><p>{{salt}}</p></b>
